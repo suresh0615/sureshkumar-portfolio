@@ -1,0 +1,48 @@
+@media only screen and(max-width:600px) {
+  .logo{
+    font-size:80px ;
+  }
+  .content{
+    margin-top: 100%;
+   
+  }
+  .content h4,h3{
+    font-size: 50px;
+  }
+  .content h1{
+    font-size: 90px;
+  }
+  nav i{
+    display: block ;
+  }
+  nav ul{
+    background: rgb(137, 183, 10);
+    position: fixed;
+    top: 0;
+    right: -500px;
+    width: 500px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+    }
+    nav ul li {
+      display: block;
+      margin: 25px;
+    }
+    nav ul i{
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      cursor: pointer;
+    }
+    .About{
+      margin-top: 50%;
+    }
+    .main img ,.text{
+      flex-basis: 40%;
+    }
+    .main img {
+      align-items: center;
+    }
+}

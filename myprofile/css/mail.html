@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+    </header>
+    <section class="skills">
+        <div class="skill-category">
+            <h2>Programming Languages</h2>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h2>Web Development</h2>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h2>Design Tools</h2>
+            <div class="skill-bar">
+                <div class="skill-fill" style="width: 70%;"></div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Add JavaScript to animate the skill bars on page load
+document.addEventListener("DOMContentLoaded", () => {
+    const skillBars = document.querySelectorAll(".skill-fill");
+    skillBars.forEach((bar) => {
+        const width = bar.style.width;
+        bar.style.width = "0";
+        setTimeout(() => {
+            bar.style.width = width;
+        }, 100);
+    });
+});
+
+    </script>
+</body>
+</html>
